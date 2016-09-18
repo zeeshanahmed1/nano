@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.smuh4.musicplayerstructure.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/trending_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Trending Music" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trending_music"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/trending_album_1"
+                android:text="Trending Album 1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/trending_album_2"
+                android:text="Trending Album 2"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/browse_albums"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout2"
+            android:text="Browse albums" />
+
+        <LinearLayout
+            android:id="@+id/browse_albums_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/browse_albums">
+
+            <TextView
+                android:id="@+id/album_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Album 1" />
+
+            <TextView
+                android:id="@+id/album_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Album 2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/recently_played"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/browse_albums_content"
+            android:text="Recently listened" />
+
+        <LinearLayout
+            android:id="@+id/recently_played_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/now_playing"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/recent_album_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recent Album 1" />
+
+            <TextView
+                android:id="@+id/recent_album_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recent Album 2" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/now_playing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Now playing" />
+
+    </RelativeLayout>
+</ScrollView>
